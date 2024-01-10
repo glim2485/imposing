@@ -8,9 +8,10 @@ import (
 )
 
 func main() {
-	go server()
-	new_filter := cuckoo.NewFilter(1000000)
+	new_filter := cuckoo.NewFilter(100)
+	fmt.Printf("testing")
 	fmt.Println(new_filter)
+	go server()
 
 }
 
